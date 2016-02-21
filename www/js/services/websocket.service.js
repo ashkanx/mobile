@@ -43,6 +43,8 @@ angular
 			var init = function() {
 				var language = localStorage.language || 'en';
 
+                appStateService.isLoggedin = false;
+
 				dataStream = new WebSocket('wss://ws.binaryws.com/websockets/v3?l=' + language);
 
 				dataStream.onopen = function() {
@@ -215,6 +217,7 @@ angular
 
 			websocketService.authenticate = function(_token, extraParams) {
 				extraParams = null || extraParams;
+                appStateService.isLoggedin = false;
 
                 var data = {
 					authorize: _token

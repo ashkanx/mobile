@@ -9527,7 +9527,8 @@ body * {
       top: -47px;
       left: -50%;
       padding: 0 10px;
-      text-align: center; }
+      text-align: center;
+      z-index: 3; }
       .trade .contract-payout .amount .error p {
         color: #fff;
         width: 220px;
@@ -9585,8 +9586,8 @@ body * {
 
 .trade .contract-purchase,
 .trade .contract-back {
-  margin-top: 5%;
-  margin-bottom: 40%; }
+  margin-top: 3%;
+  margin-bottom: 3%; }
   .trade .contract-purchase button,
   .trade .contract-back button {
     background-color: #e98024 !important;
@@ -9595,7 +9596,7 @@ body * {
     font-size: 20px; }
 
 .trade .contract-details {
-  margin-top: 20px; }
+  margin-top: 1%; }
   .trade .contract-details .win {
     color: #4CBB17 !important; }
   .trade .contract-details .lose {
@@ -9625,6 +9626,32 @@ body * {
     background-color: #fff !important;
     font-size: 16px;
     padding: 10px !important; }
+
+.trade .buy-again {
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #c4c4c4;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .trade .buy-again .price-des {
+    font-size: 3vw;
+    font-weight: bold; }
+  .trade .buy-again .price {
+    color: #e98024;
+    font-size: 4vw; }
+  .trade .buy-again button {
+    background-color: #e98024 !important;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 28px;
+    min-height: 24px; }
+
+.trade .contract-type {
+  background: #f2f2f2; }
+  .trade .contract-type .item {
+    background: #f2f2f2; }
+  .trade .contract-type .item-select select {
+    background: #f2f2f2; }
 
 .options .options-content {
   padding-left: 3%;
@@ -9698,6 +9725,8 @@ body * {
   .options .options-ticks .item-radio input:checked ~ .item-content {
     background: #2a3052;
     color: #fff; }
+  .options .options-ticks .disabled {
+    opacity: 0.7; }
 
 .options .options-amount {
   border-bottom: 1px solid #f2f2f2; }
